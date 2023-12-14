@@ -1,0 +1,71 @@
+.movielistrow {
+    margin-bottom: 30px;
+}
+
+.movielistrow h2 {
+    margin: 0px 0px 0px 30px;
+}
+
+.movielistrow {
+    overflow-x: hidden;
+    padding-left: 30px;
+}
+
+.movielistrow {
+    width: 99999px;
+    transition: all ease 0.3s;
+}
+.movierow-item {
+    display: inline-block;
+    width: 200px;
+    cursor: pointer;
+}
+
+.movierow-item img {
+    width: 100%;
+    transform: scale(0.93);
+    transition: 0.3s all ease;
+}
+
+.movierow-item img:hover {
+    transform: scale(1);
+}
+
+.movielistrow-left,
+.movielistrow-right {
+    position: absolute;
+    width: 40px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+
+.movielistrow:hover .movielistrow-left, 
+.movielistrow:hover .movielistrow-right {
+    opacity: 1;
+}
+
+.movielistrow-left {
+    left: 0;
+}
+
+.movielistrow-right {
+    right: 0;
+}
+
+@media (max-width:760px){
+    .movielistrow-left,
+    .movielistrow-right {
+        opacity: 1;
+    }
+
+    .movielistrow-right{
+        margin-right: 1vh;
+    }
+}
