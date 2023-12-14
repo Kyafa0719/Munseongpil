@@ -1,0 +1,49 @@
+.header {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    left: 0;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all .5s ease;
+    z-index: 999;
+}
+
+.user-logo {
+    margin: 15px;
+    height: 25px;
+
+}
+
+.user-logo img {
+    border-radius: 3px;
+    height: 130%;
+    display: inline-block;
+}
+
+.header-logo {
+    margin: 5px;
+    height: 40px;
+}
+
+.header-logo img {
+    height: 100%;
+}
+
+.header-logo img:hover {
+    transform: scale(0.9);
+    transition: all 0.2s ease;
+}
+
+.img {
+    overflow: clip;
+}
+
+.user-logo img:hover {
+    transform: scale(0.9);
+    transition: all 0.2s ease;
+}
